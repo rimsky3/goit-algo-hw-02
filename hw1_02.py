@@ -1,7 +1,7 @@
 from collections import deque
 
 def is_palindrome(text: str) -> bool:
-    # Remove spaces and convert to lowercase
+    
     cleaned = "".join(char.lower() for char in text if char.isalpha())
     char_deque = deque(cleaned)
 
